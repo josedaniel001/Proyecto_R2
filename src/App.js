@@ -2,7 +2,11 @@ import { List,Grid} from '@material-ui/core';
 import React, { Fragment ,useState} from 'react';
 import './App.css';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Carrito from './components/Carrito/Carrito';
+=======
+import Carrito from './components/Carrito';
+>>>>>>> 6138542023c40b2fb3194e56edfd3102e3a5f643
 =======
 import Carrito from './components/Carrito';
 >>>>>>> 6138542023c40b2fb3194e56edfd3102e3a5f643
@@ -35,6 +39,7 @@ function App() {
           <List>
           {productos.map(producto=>(                 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Producto key={producto.id} producto={producto} productos={productos} carrito={carrito} agregarProducto={agregarProducto} imagen="https://source.unsplash.com/random"/>
             
             ))}
@@ -45,6 +50,15 @@ function App() {
        <Grid container spacing={3} alignItems="center" justify="center">
          <Grid item xs={6} justify="center">
            <Carrito></Carrito>
+=======
+            <Producto key={producto.id} producto={producto} productos={productos} carrito={carrito} agregarProducto={agregarProducto} imagen="https://source.unsplash.com/random"/>            
+            ))}
+          </List>
+          </Grid>                         
+      
+         <Grid item xs={6} justify="center">
+           <Carrito carrito={carrito}></Carrito>
+>>>>>>> 6138542023c40b2fb3194e56edfd3102e3a5f643
 =======
             <Producto key={producto.id} producto={producto} productos={productos} carrito={carrito} agregarProducto={agregarProducto} imagen="https://source.unsplash.com/random"/>            
             ))}
