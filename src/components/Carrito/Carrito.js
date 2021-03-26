@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { Typography } from '@material-ui/core'
-import React from 'react'
 
-const Carrito = () => {
-    return (
-        <div>
-        <Typography variant="h5" color="textPrimary" display="inline" align="center">Tu carrito de compras: </Typography>
-=======
-=======
->>>>>>> 6138542023c40b2fb3194e56edfd3102e3a5f643
 import { Typography, Grid, List, ListItem, Divider, ListItemAvatar,Avatar,ListItemText,ListItemSecondaryAction,Button,Icon} from '@material-ui/core'
 import {BsFillTrashFill} from "react-icons/bs";
 import React from 'react'
@@ -40,10 +29,7 @@ const Carrito = ({carrito}) => {
          ))}
         </List>
         </Grid>    
-<<<<<<< HEAD
->>>>>>> 6138542023c40b2fb3194e56edfd3102e3a5f643
-=======
->>>>>>> 6138542023c40b2fb3194e56edfd3102e3a5f643
+
         </div>
     )
 }
