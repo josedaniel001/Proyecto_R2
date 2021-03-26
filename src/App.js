@@ -1,7 +1,7 @@
 import { List,Grid} from '@material-ui/core';
 import React, { Fragment ,useState} from 'react';
 import './App.css';
-import Carrito from './components/Carrito/Carrito';
+import Carrito from './components/Carrito';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Producto from './components/Producto';
@@ -30,16 +30,13 @@ function App() {
         <Grid item xs={3} >
           <List>
           {productos.map(producto=>(                 
-            <Producto key={producto.id} producto={producto} productos={productos} carrito={carrito} agregarProducto={agregarProducto} imagen="https://source.unsplash.com/random"/>
-            
+            <Producto key={producto.id} producto={producto} productos={productos} carrito={carrito} agregarProducto={agregarProducto} imagen="https://source.unsplash.com/random"/>            
             ))}
           </List>
           </Grid>                         
-       </Grid>
-
-       <Grid container spacing={3} alignItems="center" justify="center">
+      
          <Grid item xs={6} justify="center">
-           <Carrito></Carrito>
+           <Carrito carrito={carrito}></Carrito>
          </Grid>
        </Grid>
        <Footer fecha={fecha}></Footer>
